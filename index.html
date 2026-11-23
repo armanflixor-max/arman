@@ -4,74 +4,76 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Arman Nayeem | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+body{background:#fff7e8;color:#222;max-width:1200px;margin:0 auto}
+img{max-width:100%}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#1a0f08;color:#fff;position:sticky;top:0;z-index:99}
+.logo{font-weight:900;font-size:22px}.logo span{color:#ffc107}
+.topbar nav a{color:#ddd;text-decoration:none;font-size:14px;margin:0 8px}
+.btn-green{background:#25D366;color:#fff!important;padding:10px 18px;border-radius:30px;font-weight:800;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-size:15px}
+.hero{background:linear-gradient(135deg,#1a0f08,#3a1a05);color:#fff;padding:24px 16px;display:flex;gap:16px;align-items:center}
+.hero-text{flex:1}.hero-text h1{font-size:clamp(32px,6vw,62px);line-height:.95}.hero-text h1 span{color:#ffc107;display:block;font-size:clamp(38px,7vw,72px)}
+.hero-badge{background:#ffc107;color:#000;padding:10px 12px;border-radius:10px;font-weight:800;margin-top:14px;display:inline-block;line-height:1.4}
+.hero-icons{display:flex;gap:14px;margin-top:16px;flex-wrap:wrap}.hero-icons div{text-align:center;font-size:12px}.hero-icons span{font-size:24px;display:block}
+.hero-img{flex:1}.hero-img img{width:100%;height:340px;object-fit:cover;border-radius:18px}
+.section{padding:24px 14px}.section h2{text-align:center;font-size:clamp(26px,5vw,38px)}.section h2 span{color:#e2136e}
+.sub{text-align:center;color:#777;font-size:14px;margin:8px 0 16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.grid4 div{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.08);text-align:center;padding-bottom:10px}.grid4 img{width:100%;height:160px;object-fit:cover}.grid4 b{font-size:13px;display:block;padding:6px}
+.banner{position:relative}.banner img{width:100%;height:320px;object-fit:cover;display:block}.banner-text{position:absolute;right:16px;top:24px;width:45%;color:#fff;background:rgba(0,0,0,.35);padding:16px;border-radius:14px}.banner-text h2{font-size:clamp(22px,4vw,32px)}.banner-text h2 span{color:#ffc107}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center;padding:20px 10px}.features b{display:block;margin-top:6px}.features p{font-size:12px;color:#666;margin-top:4px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.review{background:#fff;padding:14px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.08);display:flex;gap:10px}.review img{width:48px;height:48px;border-radius:50%;object-fit:cover}.review p{font-size:13px;line-height:1.5}.review small{color:#888}
+.location{position:relative}.location img{width:100%;height:200px;object-fit:cover;display:block}.loc-box{position:absolute;left:16px;top:22px;color:#fff;background:rgba(0,0,0,.4);padding:14px;border-radius:12px}.loc-box h2{font-size:clamp(20px,4vw,28px)}.loc-box h2 span{color:#ffc107}
+.order{display:flex;gap:14px;align-items:center;padding:20px}.order img{width:50%;border-radius:14px;height:230px;object-fit:cover}.order h2{font-size:clamp(24px,5vw,34px);color:#e2136e}
+.bkash{background:#fff;padding:22px;text-align:center}.bkash-logo{font-size:34px;font-weight:900;color:#e2136e}.bkash img{width:230px;background:#fff;padding:10px;border-radius:14px;border:1px solid #eee;margin:12px auto;display:block}.bkash-num{font-size:32px;font-weight:900}
+.footer{background:#1a0f08;color:#fff;padding:22px 16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer b{font-size:18px}
+#zoomBox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);justify-content:center;align-items:center;z-index:999}#zoomBox img{max-width:92%;max-height:92%;border-radius:12px}
+/* MOBILE - মোবাইলে সুন্দর দেখার জন্য */
+@media(max-width:768px){
+.topbar nav{display:none}
+.hero{flex-direction:column;text-align:center}.hero-img{width:100%}.hero-img img{height:280px}
+.grid4{grid-template-columns:repeat(2,1fr)}
+.features{grid-template-columns:repeat(2,1fr)}
+.reviews{grid-template-columns:1fr}
+.banner-text{width:88%;right:6%;left:6%}
+.order{flex-direction:column}.order img{width:100%;height:210px}
+.footer{flex-direction:column;text-align:center;justify-content:center}
+}
+@media(max-width:400px){.grid4{grid-template-columns:1fr 1fr}.grid4 img{height:130px}.bkash img{width:200px}}
+</style>
 </head>
 <body>
 
-<!-- HERO -->
-<header class="hero">
-  <img src="pic/profile.jpg.jpg" class="profile-img" alt="Arman Nayeem">
-  <h1>Arman <span>Nayeem</span></h1>
-  <p class="tagline">CNC Operator • Video Editor • Model • Digital Creator</p>
-  <p class="sub">📍 Dhaka, Bangladesh</p>
-  <div class="hero-btns">
-    <a class="btn wa" href="https://wa.me/8801868361917" target="_blank">💬 WhatsApp</a>
-    <a class="btn call" href="tel:+8801868361917">📞 Call Now</a>
-    <a class="btn fb" href="https://www.facebook.com/profile.php?id=61584905182070" target="_blank">Facebook</a>
-  </div>
-</header>
+<div class="topbar"><div class="logo">Arman <span>Nayeem</span></div><nav><a href="#">Home</a><a href="#works">Works</a><a href="#review">Review</a><a href="#contact">Contact</a></nav><a class="btn-green" href="https://wa.me/8801868361917">💬 Order Sekarang</a></div>
 
-<!-- ABOUT -->
-<section class="section">
-  <h2>About <span>Me</span></h2>
-  <div class="box">
-    <p>Hi, I'm <b>Arman Nayeem</b>. I work in CNC, video editing, modeling and digital services. I love clean work and helping clients grow.</p>
-    <div class="stats">
-      <div><b>5+</b><span>Years Experience</span></div>
-      <div><b>100+</b><span>Projects Done</span></div>
-      <div><b>50+</b><span>Happy Clients</span></div>
-    </div>
-  </div>
-</section>
+<div class="hero">
+<div class="hero-text">
+<h1>ARMAN <span>NAYEEM</span></h1>
+<div class="hero-badge">CNC • Editing • Model<br>Dhaka, Bangladesh</div>
+<div class="hero-icons"><div><span>⚙️</span>CNC Expert</div><div><span>🎬</span>Video Editing</div><div><span>📸</span>Modeling</div><div><span>❤️</span>Trusted Work</div></div>
+</div>
+<div class="hero-img"><img src="pic/profile.jpg.jpg" alt="Arman Nayeem"></div>
+</div>
 
-<!-- GALLERY -->
-<section class="section">
-  <h2>My <span>Gallery</span></h2>
-  <div class="gallery">
-    <img src="pic/photo1.jpg.jpg" onclick="zoom(this.src)" alt="Gallery 1">
-    <img src="pic/photo2.jpg.jpg" onclick="zoom(this.src)" alt="Gallery 2">
-    <img src="pic/photo3.jpg.jpg" onclick="zoom(this.src)" alt="Gallery 3">
-  </div>
-</section>
+<div class="section" id="works"><h2>My <span>Works</span></h2><p class="sub">আমার সেরা কাজগুলো দেখে নিন</p>
+<div class="grid4">
+<div><img src="pic/cnc.jpg.jpg"><b>CNC Operator</b></div>
+<div><img src="pic/editing.jpg.jpg"><b>Video Editing</b></div>
+<div><img src="pic/model.jpg.jpg"><b>Modeling</b></div>
+<div><img src="pic/hive.jpg.jpg"><b>Hive Digital</b></div>
+<div><img src="pic/airport.jpg.jpg"><b>Airport Work</b></div>
+<div><img src="pic/bhumi.jpg.jpg"><b>Bhumi Seba</b></div>
+<div><img src="pic/flixor.jpg.jpg"><b>Flixor</b></div>
+<div><img src="pic/photo1.jpg.jpg"><b>Photoshoot</b></div>
+</div></div>
 
-<!-- WORKS -->
-<section class="section">
-  <h2>My <span>Works</span></h2>
-  <div class="works">
-    <div class="card"><img src="pic/cnc.jpg.jpg"><h3>CNC Operator</h3><p>Precision CNC Machine Work</p></div>
-    <div class="card"><img src="pic/hive.jpg.jpg"><h3>Hive Digital</h3><p>Digital Marketing & Online Services</p></div>
-    <div class="card"><img src="pic/editing.jpg.jpg"><h3>Video Editing</h3><p>Reels, YouTube & Pro Editing</p></div>
-    <div class="card"><img src="pic/airport.jpg.jpg"><h3>Airport Work</h3><p>Airport Support & Service</p></div>
-    <div class="card"><img src="pic/bhumi.jpg.jpg"><h3>Bhumi Seba</h3><p>Land / Bhumi Seba Services</p></div>
-    <div class="card"><img src="pic/flixor.jpg.jpg"><h3>Flixor</h3><p>Flixor Project & Content</p></div>
-    <div class="card"><img src="pic/model.jpg.jpg"><h3>Modeling</h3><p>Photoshoot & Fashion Modeling</p></div>
-  </div>
-</section>
+<div class="banner"><img src="pic/photo2.jpg.jpg"><div class="banner-text"><h2>Best Work <span>For You ❤️</span></h2><p style="font-size:13px;margin-top:8px;line-height:1.6">Clean কাজ, সময়মতো ডেলিভারি আর ১০০% বিশ্বস্ত সার্ভিস। আপনার প্রজেক্টের জন্য আমি রেডি।</p><br><a class="btn-green" href="https://wa.me/8801868361917">Order Sekarang ></a></div></div>
 
-<!-- CONTACT -->
-<section class="section">
-  <h2>Contact <span>Me</span></h2>
-  <div class="box center">
-    <p style="font-size:18px">Let's work together! 🤝</p>
-    <p style="margin-top:10px">WhatsApp / Call: <b style="color:#fff">01868-361917</b></p>
-    <div class="hero-btns">
-      <a class="btn fb" href="https://www.facebook.com/profile.php?id=61584905182070" target="_blank">Facebook</a>
-      <a class="btn wa" href="https://wa.me/8801868361917" target="_blank">💬 WhatsApp</a>
-      <a class="btn call" href="tel:+8801868361917">📞 Call</a>
-    </div>
-  </div>
-</section>
+<div class="features">
+<div>⚙️<b>CNC Quality</b><p>Precision কাজ, সেরা ফিনিশিং</p></div>
+<div>🎬<b>Fresh Editing</b><p>Reels, YouTube — নতুন স্টাইল</p></div>
+<div>⭐<b>Pro & Clean</b><p>সুন্দর, প্রফেশনাল আউটপুট</p></div>
+<div>🚚<b>Fast Delivery</b><p>দ্রুত কাজ, সহজ যোগাযোগ</p></div>
+</div>
 
-<!-- BKASH -->
-<section class="section">
-  <h2>Payment <span>bK
+<div class="section" id="review">
