@@ -1,0 +1,3 @@
+function showMessage() {
+    alert("Assalamu Alaikum! Amar website e welcome");
+}
