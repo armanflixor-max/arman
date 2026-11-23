@@ -1,0 +1,45 @@
+
+
+Skip to content
+Using Gmail with screen readers
+Enable desktop notifications for Gmail.
+   OK  No, thanks
+1 of 13
+style. css
+Inbox
+
+Arman Nayeem <armannayeem25@gmail.com>
+05:35 (0 minutes ago)
+to me
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin-top: 50px;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
