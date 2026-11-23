@@ -12,68 +12,78 @@ img{max-width:100%}
 .logo{font-weight:900;font-size:22px}.logo span{color:#ffc107}
 .topbar nav a{color:#ddd;text-decoration:none;font-size:14px;margin:0 8px}
 .btn-green{background:#25D366;color:#fff!important;padding:10px 18px;border-radius:30px;font-weight:800;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-size:15px}
+.btn-pink{background:#e2136e;color:#fff;padding:10px 18px;border-radius:30px;font-weight:800;text-decoration:none;display:inline-block;border:none;cursor:pointer}
 .hero{background:linear-gradient(135deg,#1a0f08,#3a1a05);color:#fff;padding:24px 16px;display:flex;gap:16px;align-items:center}
-.hero-text{flex:1}.hero-text h1{font-size:clamp(32px,6vw,62px);line-height:.95}.hero-text h1 span{color:#ffc107;display:block;font-size:clamp(38px,7vw,72px)}
+.hero-text{flex:1}.hero-text h1{font-size:clamp(32px,6vw,62px);line-height:.95}.hero-text h1 span{color:#ffc107;display:block}
 .hero-badge{background:#ffc107;color:#000;padding:10px 12px;border-radius:10px;font-weight:800;margin-top:14px;display:inline-block;line-height:1.4}
 .hero-icons{display:flex;gap:14px;margin-top:16px;flex-wrap:wrap}.hero-icons div{text-align:center;font-size:12px}.hero-icons span{font-size:24px;display:block}
-.hero-img{flex:1}.hero-img img{width:100%;height:340px;object-fit:cover;border-radius:18px}
+.hero-img{flex:1}.hero-img img{width:100%;height:340px;object-fit:cover;border-radius:18px;cursor:pointer}
 .section{padding:24px 14px}.section h2{text-align:center;font-size:clamp(26px,5vw,38px)}.section h2 span{color:#e2136e}
 .sub{text-align:center;color:#777;font-size:14px;margin:8px 0 16px}
-.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.grid4 div{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.08);text-align:center;padding-bottom:10px}.grid4 img{width:100%;height:160px;object-fit:cover}.grid4 b{font-size:13px;display:block;padding:6px}
-.banner{position:relative}.banner img{width:100%;height:320px;object-fit:cover;display:block}.banner-text{position:absolute;right:16px;top:24px;width:45%;color:#fff;background:rgba(0,0,0,.35);padding:16px;border-radius:14px}.banner-text h2{font-size:clamp(22px,4vw,32px)}.banner-text h2 span{color:#ffc107}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.08);text-align:center;padding-bottom:10px;cursor:pointer;transition:.2s}.card:hover{transform:scale(1.03)}.card img{width:100%;height:160px;object-fit:cover}.card b{font-size:13px;display:block;padding:6px}.card small{color:#e2136e;font-weight:700;font-size:12px}
+.banner{position:relative}.banner img{width:100%;height:320px;object-fit:cover;display:block}.banner-text{position:absolute;right:16px;top:24px;width:45%;color:#fff;background:rgba(0,0,0,.35);padding:16px;border-radius:14px}
+.cv-box{background:#fff;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.08);display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap}.cv-box img{width:110px;height:110px;border-radius:50%;object-fit:cover}
 .features{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center;padding:20px 10px}.features b{display:block;margin-top:6px}.features p{font-size:12px;color:#666;margin-top:4px}
-.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.review{background:#fff;padding:14px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.08);display:flex;gap:10px}.review img{width:48px;height:48px;border-radius:50%;object-fit:cover}.review p{font-size:13px;line-height:1.5}.review small{color:#888}
-.location{position:relative}.location img{width:100%;height:200px;object-fit:cover;display:block}.loc-box{position:absolute;left:16px;top:22px;color:#fff;background:rgba(0,0,0,.4);padding:14px;border-radius:12px}.loc-box h2{font-size:clamp(20px,4vw,28px)}.loc-box h2 span{color:#ffc107}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.review{background:#fff;padding:14px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.08);display:flex;gap:10px}.review img{width:48px;height:48px;border-radius:50%;object-fit:cover}.review p{font-size:13px;line-height:1.5}
+.location{position:relative}.location img{width:100%;height:200px;object-fit:cover;display:block}.loc-box{position:absolute;left:16px;top:22px;color:#fff;background:rgba(0,0,0,.4);padding:14px;border-radius:12px}
 .order{display:flex;gap:14px;align-items:center;padding:20px}.order img{width:50%;border-radius:14px;height:230px;object-fit:cover}.order h2{font-size:clamp(24px,5vw,34px);color:#e2136e}
-.bkash{background:#fff;padding:22px;text-align:center}.bkash-logo{font-size:34px;font-weight:900;color:#e2136e}.bkash img{width:230px;background:#fff;padding:10px;border-radius:14px;border:1px solid #eee;margin:12px auto;display:block}.bkash-num{font-size:32px;font-weight:900}
-.footer{background:#1a0f08;color:#fff;padding:22px 16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer b{font-size:18px}
-#zoomBox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);justify-content:center;align-items:center;z-index:999}#zoomBox img{max-width:92%;max-height:92%;border-radius:12px}
-/* MOBILE - মোবাইলে সুন্দর দেখার জন্য */
-@media(max-width:768px){
-.topbar nav{display:none}
-.hero{flex-direction:column;text-align:center}.hero-img{width:100%}.hero-img img{height:280px}
-.grid4{grid-template-columns:repeat(2,1fr)}
-.features{grid-template-columns:repeat(2,1fr)}
-.reviews{grid-template-columns:1fr}
-.banner-text{width:88%;right:6%;left:6%}
-.order{flex-direction:column}.order img{width:100%;height:210px}
-.footer{flex-direction:column;text-align:center;justify-content:center}
-}
-@media(max-width:400px){.grid4{grid-template-columns:1fr 1fr}.grid4 img{height:130px}.bkash img{width:200px}}
+.bkash{background:#fff;padding:22px;text-align:center}.bkash-logo{font-size:34px;font-weight:900;color:#e2136e}.bkash img{width:230px;padding:10px;border-radius:14px;border:1px solid #eee;margin:12px auto;display:block}.bkash-num{font-size:32px;font-weight:900}
+.footer{background:#1a0f08;color:#fff;padding:22px 16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+/* MODAL - Details Popup */
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:999;justify-content:center;align-items:center;padding:14px}.modal.open{display:flex}
+.modal-card{background:#fff;width:100%;max-width:520px;border-radius:18px;overflow:hidden;max-height:92vh;overflow-y:auto}.modal-card img{width:100%;height:260px;object-fit:cover}.modal-body{padding:18px}.modal-body h3{font-size:24px}.modal-body h3 span{color:#e2136e}.modal-body p{font-size:14px;line-height:1.7;margin-top:8px;color:#444}.modal-body ul{margin:10px 0 0 18px;font-size:14px;line-height:1.7}.close-btn{float:right;background:#000;color:#fff;border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px}
+@media(max-width:768px){.topbar nav{display:none}.hero{flex-direction:column;text-align:center}.hero-img{width:100%}.hero-img img{height:280px}.grid4{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}.reviews{grid-template-columns:1fr}.banner-text{width:88%;right:6%;left:6%}.order{flex-direction:column}.order img{width:100%}.footer{flex-direction:column;text-align:center}}
 </style>
 </head>
 <body>
 
-<div class="topbar"><div class="logo">Arman <span>Nayeem</span></div><nav><a href="#">Home</a><a href="#works">Works</a><a href="#review">Review</a><a href="#contact">Contact</a></nav><a class="btn-green" href="https://wa.me/8801868361917">💬 Order Sekarang</a></div>
+<div class="topbar"><div class="logo">Arman <span>Nayeem</span></div><nav><a href="#">Home</a><a href="#works">Works</a><a href="#cv">CV</a><a href="#contact">Contact</a></nav><a class="btn-green" href="https://wa.me/8801868361917">💬 Order</a></div>
 
 <div class="hero">
-<div class="hero-text">
-<h1>ARMAN <span>NAYEEM</span></h1>
-<div class="hero-badge">CNC • Editing • Model<br>Dhaka, Bangladesh</div>
-<div class="hero-icons"><div><span>⚙️</span>CNC Expert</div><div><span>🎬</span>Video Editing</div><div><span>📸</span>Modeling</div><div><span>❤️</span>Trusted Work</div></div>
-</div>
-<div class="hero-img"><img src="pic/profile.jpg.jpg" alt="Arman Nayeem"></div>
+<div class="hero-text"><h1>ARMAN <span>NAYEEM</span></h1><div class="hero-badge">CNC • Editing • Model<br>Dhaka, Bangladesh</div><div class="hero-icons"><div><span>⚙️</span>CNC Expert</div><div><span>🎬</span>Video Editing</div><div><span>📸</span>Modeling</div><div><span>❤️</span>Trusted</div></div><br><button class="btn-pink" onclick="openDetail('cv')">📄 আমার CV দেখুন</button></div>
+<div class="hero-img"><img src="pic/profile.jpg.jpg" onclick="openDetail('profile')"></div>
 </div>
 
-<div class="section" id="works"><h2>My <span>Works</span></h2><p class="sub">আমার সেরা কাজগুলো দেখে নিন</p>
+<div class="section" id="works"><h2>My <span>Works</span></h2><p class="sub">যেকোনো ছবিতে ক্লিক করলেই Details চলে আসবে 👇</p>
 <div class="grid4">
-<div><img src="pic/cnc.jpg.jpg"><b>CNC Operator</b></div>
-<div><img src="pic/editing.jpg.jpg"><b>Video Editing</b></div>
-<div><img src="pic/model.jpg.jpg"><b>Modeling</b></div>
-<div><img src="pic/hive.jpg.jpg"><b>Hive Digital</b></div>
-<div><img src="pic/airport.jpg.jpg"><b>Airport Work</b></div>
-<div><img src="pic/bhumi.jpg.jpg"><b>Bhumi Seba</b></div>
-<div><img src="pic/flixor.jpg.jpg"><b>Flixor</b></div>
-<div><img src="pic/photo1.jpg.jpg"><b>Photoshoot</b></div>
+<div class="card" onclick="openDetail('cnc')"><img src="pic/cnc.jpg.jpg"><b>CNC Operator</b><small>Details দেখুন →</small></div>
+<div class="card" onclick="openDetail('editing')"><img src="pic/editing.jpg.jpg"><b>Video Editing / Photoshop</b><small>Details দেখুন →</small></div>
+<div class="card" onclick="openDetail('model')"><img src="pic/model.jpg.jpg"><b>Modeling</b><small>Details দেখুন →</small></div>
+<div class="card" onclick="openDetail('hive')"><img src="pic/hive.jpg.jpg"><b>Hive Digital</b><small>Details দেখুন →</small></div>
+<div class="card" onclick="openDetail('airport')"><img src="pic/airport.jpg.jpg"><b>Airport Work</b><small>Details দেখুন →</small></div>
+<div class="card" onclick="openDetail('bhumi')"><img src="pic/bhumi.jpg.jpg"><b>Bhumi Seba</b><small>Details দেখুন →</small></div>
+<div class="card" onclick="openDetail('flixor')"><img src="pic/flixor.jpg.jpg"><b>Flixor</b><small>Details দেখুন →</small></div>
+<div class="card" onclick="openDetail('photo')"><img src="pic/photo1.jpg.jpg"><b>Photoshoot</b><small>Details দেখুন →</small></div>
 </div></div>
 
-<div class="banner"><img src="pic/photo2.jpg.jpg"><div class="banner-text"><h2>Best Work <span>For You ❤️</span></h2><p style="font-size:13px;margin-top:8px;line-height:1.6">Clean কাজ, সময়মতো ডেলিভারি আর ১০০% বিশ্বস্ত সার্ভিস। আপনার প্রজেক্টের জন্য আমি রেডি।</p><br><a class="btn-green" href="https://wa.me/8801868361917">Order Sekarang ></a></div></div>
+<!-- CV SECTION -->
+<div class="section" id="cv"><h2>My <span>CV</span></h2><p class="sub">আমার সম্পূর্ণ জীবনবৃত্তান্ত</p>
+<div class="cv-box"><img src="pic/profile.jpg.jpg"><div style="text-align:left"><h3>Arman Nayeem</h3><p style="font-size:13px;color:#666;margin:6px 0">CNC Operator • Video Editor • Model<br>📍 Dhaka, Bangladesh | 📱 01868-361917</p><button class="btn-pink" onclick="openDetail('cv')">👁️ CV দেখুন</button> <button class="btn-green" onclick="downloadCV()">⬇️ CV ডাউনলোড</button></div></div></div>
 
-<div class="features">
-<div>⚙️<b>CNC Quality</b><p>Precision কাজ, সেরা ফিনিশিং</p></div>
-<div>🎬<b>Fresh Editing</b><p>Reels, YouTube — নতুন স্টাইল</p></div>
-<div>⭐<b>Pro & Clean</b><p>সুন্দর, প্রফেশনাল আউটপুট</p></div>
-<div>🚚<b>Fast Delivery</b><p>দ্রুত কাজ, সহজ যোগাযোগ</p></div>
+<div class="banner"><img src="pic/photo2.jpg.jpg"><div class="banner-text"><h2>Best Work <span>For You ❤️</span></h2><p style="font-size:13px;margin-top:8px;line-height:1.6">Clean কাজ, সময়মতো ডেলিভারি আর ১০০% বিশ্বস্ত সার্ভিস।</p><br><a class="btn-green" href="https://wa.me/8801868361917">Order Sekarang ></a></div></div>
+
+<div class="section" id="review"><h2>What They <span>Say?</span></h2><div class="reviews">
+<div class="review"><img src="pic/photo3.jpg.jpg"><div><p>⭐⭐⭐⭐⭐<br>"Arman এর কাজ খুব সুন্দর, সময়মতো ডেলিভারি দেয়।"<br><small>— Client, Dhaka</small></p></div></div>
+<div class="review"><img src="pic/profile.jpg.jpg"><div><p>⭐⭐⭐⭐⭐<br>"Editing টা একদম প্রফেশনাল।"<br><small>— Client, Chattogram</small></p></div></div>
+<div class="review"><img src="pic/photo1.jpg.jpg"><div><p>⭐⭐⭐⭐⭐<br>"খুব ভালো ব্যবহার, বিশ্বস্ত ছেলে।"<br><small>— Client, Dhaka</small></p></div></div>
+</div></div>
+
+<div class="location"><img src="pic/airport.jpg.jpg"><div class="loc-box"><h2>📍 My Location<br><span>Dhaka, Bangladesh</span></h2></div></div>
+
+<div class="order" id="contact"><img src="pic/photo3.jpg.jpg"><div><h2>Jom Order<br>Sekarang!</h2><p style="margin:10px 0">কাজ করাতে চান? এখনই WhatsApp এ মেসেজ করেন।</p><a class="btn-green" href="https://wa.me/8801868361917?text=Hi%20Arman,%20I%20want%20to%20work%20with%20you">💬 Order via WhatsApp ></a></div></div>
+
+<div class="bkash"><div class="bkash-logo">bKash</div><p>Payment — QR স্ক্যান করুন</p><img src="pic/bkash-qr.jpg.jpg"><div class="bkash-num" id="bkashNumber">01868361917</div><p>Arman Nayeem</p><br><button class="btn-green" onclick="copyBkash()">📋 নাম্বার কপি করুন</button><p id="copyMsg" style="display:none;color:#00aa55;margin-top:10px">✅ কপি হয়ে গেছে!</p></div>
+
+<div class="footer"><div><b>Arman Nayeem</b><p style="color:#aaa;font-size:13px">CNC • Editing • Model • Dhaka</p></div><div><b>Contact</b><p style="font-size:13px;color:#aaa">📱 01868-361917<br>📍 Dhaka, Bangladesh</p></div></div>
+
+<!-- DETAILS POPUP -->
+<div class="modal" id="detailModal" onclick="if(event.target==this)closeDetail()">
+<div class="modal-card"><button class="close-btn" onclick="closeDetail()" style="position:absolute;margin:10px">✕</button><img id="dImg" src=""><div class="modal-body"><h3 id="dTitle"></h3><p id="dDesc"></p><ul id="dList"></ul><br><a class="btn-green" href="https://wa.me/8801868361917">💬 এই কাজের জন্য WhatsApp করুন</a></div></div>
 </div>
 
-<div class="section" id="review">
+<script>
+const DATA = {
+profile:{img:'pic/profile.jpg.jpg',title:'Arman <span>Nayeem</span>',desc:'আমি Arman Nayeem — Dhaka থেকে কাজ করি। CNC, Video Editing, Photoshop এবং Modeling — এই 3টা তে আমি প্রফেশনাল।',list:['📍 Location: Dhaka, Bangladesh','📱 Phone: 01868-361917','💼 Experience: 2+ Years','⭐ Rating: 5.0 / 5']},
+cnc:{img:'pic/cnc.jpg.jpg',title:'CNC <span>Operator</span>',desc:'CNC মেশিনে আমি প্রফেশনালভাবে কাজ করি। Precision কাটিং, ডিজাইন আর ফিনিশিং — সবকিছু নিখুঁতভাবে করি।',list:['🏭 কোথায় কাজ করেছি: Dhaka CNC Workshop','⏰ অভিজ্ঞতা: 2 বছর','⚙️ যা পারি: CNC Cutting, Drilling, Design Setup, Measurement','✅ 100+ প্রজেক্ট সম্পন্ন']},
+editing:{img:'pic/editing.jpg.jpg',title:'Video Editing & <span>Photoshop</span>',desc:'Photoshop, Premiere Pro, CapCut — দিয়ে Reels, YouTube ভিডিও, Thumbnail আর পোস্টার বানাই।',list:['🎬 অভিজ্ঞতা: 2+ বছর','🖥️ Software: Photoshop, Premiere Pro, CapCut, Lightroom','📱 যা বানাই: Reels, YouTube Video, Thumbnail, Poster','✅ 200+ ভিডিও এডিট সম্পন্ন']},
+model:{img:'pic/model.jpg.jpg',title:'<span>Modeling</span>',desc:'ফটোশুট, ব্র
